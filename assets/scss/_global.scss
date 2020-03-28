@@ -1,0 +1,99 @@
+*, *:before, *:after {
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @include body-font;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @include heading-font;
+  font-weight: 700;
+}
+
+/* Buttons */
+.btn-primary, .button {
+    color: #fff !important;
+    background: #359148;
+    background: -webkit-gradient(linear,left top,left bottom,from(#359148),color-stop(53%,#2f7f3d));
+    background: linear-gradient(to bottom,#359148 0,#2f7f3d 53%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#359148',endColorstr='#2f7f3d',GradientType=0);
+    background-color: #359148;
+    border-color: $primary !important;
+    min-width: 188px;
+    font-size:16px;
+    text-align: center;
+    @include body-font;
+    padding: .618em 1em;
+}
+
+.vc_btn3 {
+  min-width: 188px;
+  font-size:16px !important;
+  text-align: center;
+  color:#000 !important;
+  @include body-font;
+  padding: .618em 1em;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,e5e5e5+100;White+3D */
+  background: #ffffff !important; /* Old browsers */
+  background: -moz-linear-gradient(top,  #ffffff 0%, #e5e5e5 100%) !important; /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%) !important; /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #ffffff 0%,#e5e5e5 100%) !important; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ) !important; /* IE6-9 */
+  border:1px solid #e5e5e5 !important;
+
+}
+
+#main-content button {
+  min-width: 188px;
+  font-size:16px;
+  color:#000;
+  padding: .618em 1em;
+}
+
+
+
+/* Logo */
+.logo {
+  width:99px;
+  img {
+    width:100%;
+  }
+}
+
+/* Modals */
+.modal-dialog {
+  min-height: calc(100vh - 60px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: auto;
+  @media(max-width: 768px) {
+    min-height: calc(100vh - 20px);
+  }
+}
+
+#swipebox-container {
+  .slide {
+    img {
+      max-width: 500px !important;
+    }
+  }
+}

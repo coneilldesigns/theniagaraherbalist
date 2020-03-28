@@ -1,0 +1,81 @@
+.main-slideshow {
+  position: relative;
+  .masthead {
+    position: relative;
+    width:100%;
+    background-color: $gray-800;
+    background: url('../img/bg-masthead.jpg') no-repeat center center;
+    @include background-cover;
+    padding-top: 1rem 0;
+    height:100%;
+    text-align: left;
+    min-height: 485px;
+    
+    .overlay {
+      position: absolute;
+      background-color: #FFF;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      opacity: 0.8;
+    }
+    .leaf {
+      width:66px;
+      margin-bottom:20px;
+    }
+    h1 {
+      font-size: 3rem;
+      color:$green;
+      background: #359148;
+      background: -webkit-gradient(linear,left top,left bottom,from(#359148),color-stop(53%,#2f7f3d));
+      background: linear-gradient(to bottom,#359148 0,#2f7f3d 53%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#359148',endColorstr='#2f7f3d',GradientType=0);
+      background-color: #359148;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin:0;
+      padding:0;
+    }
+    h3 {
+      margin-top: 10px;
+      padding: 0;
+      display: block;
+      width: 100%;
+      font-size: 16px;
+      line-height: 26px;
+      margin-bottom: 20px;
+      font-weight: 900;
+      color: #000;
+      font-family: 'Lato','Helvetica Neue',Helvetica,Arial,sans-serif !important;
+      font-weight: 400;
+      -webkit-text-fill-color: black;
+    }
+
+    @media (max-width: 1199px) {
+      padding: 1rem 0;
+
+      h1 {
+        font-size: 2.5rem;
+      }
+    }
+
+    @media (max-width: 767px) {
+      padding-top: 2.3rem;
+      padding-bottom: 2.3rem;
+    }
+
+    @media (max-width: 767px) {
+      text-align: center;
+      .leaf {
+        margin:0 auto 20px;
+        width:32px;
+      }
+      h1 {
+        font-size: 1.7rem;
+      }
+
+    }
+
+  }
+}

@@ -1,0 +1,154 @@
+.instagram-feed {
+  height:0px;
+  overflow: hidden;
+}
+
+.copyright {
+  width:100%;
+  text-align: center;
+  background-color:$black;
+  padding:7px 10px;
+
+  p {
+    color:$white;
+    font-size:12px;
+    display: block;
+    margin:0;
+    padding:0;
+  }
+}
+
+footer.footer {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  @include greenGradient;
+  color:#FFF;
+
+  .main-social {
+    @include clearfix;
+    li {
+      text-align: right;
+      width:auto;
+      display: inline-block;
+      margin-right:12px;
+      a {
+        font-size:18px;
+      }
+    }
+  }
+
+  h3 {
+    font-size:18px;
+    margin-bottom:20px;
+  }
+  p {
+    font-size:13px;
+    line-height: 24px;
+  }
+
+  ul {
+    padding:0;
+    margin:0;
+    font-size:13px;
+    li {
+      list-style-type: none;
+      line-height: 24px;
+      a {
+        color:#FFF;
+      }
+    }
+  }
+}
+
+#sub-widget {
+  text-align:left;
+
+  // p {
+  //   margin: 0;
+  //   padding: 0;
+  // }
+
+  label {
+    width:100%;
+  }
+
+  input[type=email] {
+    font-size:11px;
+    padding:0px 7px;
+    width:100%;
+  }
+  input[type=submit] {
+    font-size:11px;
+    padding:0px 7px;
+    width:100%;
+  }
+
+  .wpcf7-not-valid-tip {
+    color:#FFF;
+    font-size: 11px;
+    line-height: 11px;
+    text-align: center;
+    margin-bottom: 4px;
+  }
+
+  .wpcf7-response-output {
+    padding:0;
+    margin:0;
+    text-align: center;
+    font-size: 11px;
+    border: 0px;
+    margin-top:-15px;
+  }
+
+}
+
+@media (max-width: 991px) {
+  footer.footer {
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    .main-social {
+      margin-top:30px !important;
+      margin-bottom:0px !important;
+      text-align: center;
+      li {
+        a {
+          font-size: 1.5em;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+
+  footer.footer {
+    text-align: center;
+
+    img {
+      width:130px;
+      margin:0 auto 50px;
+    }
+
+    a {
+      color:#FFF;
+    }
+
+    h3 {
+      font-size:19px;
+    }
+
+    .textwidget, ul {
+      margin-bottom:50px;
+      p {
+        font-size:16px;
+        line-height: 32px;
+        text-align: center;
+      }
+      li {
+        font-size:16px;
+        line-height: 32px;
+      }
+    }
+
+  }
+}

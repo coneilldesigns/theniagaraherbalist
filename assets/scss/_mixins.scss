@@ -1,0 +1,36 @@
+// Mixins
+// Background Cover Mixin
+@mixin background-cover {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+@mixin greenGradient {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#359148+0,2f7f3d+53 */
+background: #359148; /* Old browsers */
+background: -moz-linear-gradient(top, #359148 0%, #2f7f3d 53%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #359148 0%,#2f7f3d 53%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #359148 0%,#2f7f3d 53%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#359148', endColorstr='#2f7f3d',GradientType=0 ); /* IE6-9 */
+}
+
+// Font Mixins
+@mixin body-font {
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+  font-weight: 400;
+}
+
+@mixin heading-font {
+  font-family: 'Futura', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+}
+
+// Mixin itself
+@mixin clearfix() {
+  &::after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+}
