@@ -189,10 +189,22 @@ header .product-categories {
   position: relative;
   width:100%;
   height:calc(100vh - 114px) !important;
-  
+
+  .center-center {
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    left:0;
+    width:100%;
+    z-index:1;
+  }
+
   .dutchie--iframe {
     height:calc(100vh - 114px) !important;
     overflow: hidden;
+    background-color: #FFF;
+    position: relative;
+    z-index: 99;
   }
 
   #last-updated {

@@ -92,7 +92,8 @@ header .product-categories a{color:#000}
 header .product-categories a:hover{text-decoration:none}
 #cart{position:fixed;background-color:green;width:400px;height:100%;z-index:99;right:0;top:0;display:none}
 #menu-holder{overflow:hidden;position:relative;width:100%;height:calc(100vh - 114px) !important}
-#menu-holder .dutchie--iframe{height:calc(100vh - 114px) !important;overflow:hidden}
+#menu-holder .center-center{position:absolute;top:50%;-webkit-transform:translateY(-50%);transform:translateY(-50%);left:0;width:100%;z-index:1}
+#menu-holder .dutchie--iframe{height:calc(100vh - 114px) !important;overflow:hidden;background-color:#FFF;position:relative;z-index:99}
 #menu-holder #last-updated{position:absolute;bottom:0;left:0;width:100%;background-color:#334b37;color:#FFF;font-size:12px;text-align:center;padding:5px 12px}
 #menu-holder .selected{background-color:#efefef}
 #menu-holder .product-holder{padding-top:15px;padding-bottom:15px}
