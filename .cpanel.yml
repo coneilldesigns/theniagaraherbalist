@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/theni182/public_html/wp-content/themes/theniagaraherbalist-full
+    - /bin/cp * DEPLOYPATH
