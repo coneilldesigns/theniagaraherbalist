@@ -13,8 +13,30 @@
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 	<link rel="icon" type="image/png" href="<?php echo $images_url; ?>favicon.png" />
 	<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-	
+
 	<?php wp_head(); ?>
+
+	<!-- iOS -->
+	<!-- https://developer.apple.com/library/ios/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html -->
+	<!-- https://developer.apple.com/library/ios/documentation/UserExperience/Conceptual/MobileHIG/IconMatrix.html#//apple_ref/doc/uid/TP40006556-CH27-SW1 -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000000">
+	<link rel="apple-touch-icon" sizes="76x76" href="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icon-70x70.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="167x167" href="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icon-167x167.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icon-180x180.png">
+
+	<!-- Windows -->
+	<!-- https://msdn.microsoft.com/en-us/library/dn255024(v=vs.85).aspx -->
+	<!-- http://www.buildmypinnedsite.com/en -->
+	<meta name="application-name" content="NAME"/>
+	<meta name="msapplication-TileColor" content="#000000"/>
+	<meta name="msapplication-TileImage" content="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icon-70x70.png">
+	<meta name="msapplication-square70x70logo" content="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icon-70x70.png">
+	<meta name="msapplication-square150x150logo" content="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icon-150x150.png">
+	<meta name="msapplication-wide310x150logo" content="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icon-310x150.png">
+	<meta name="msapplication-square310x310logo" content="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icon-310x310.png">
 
 </head>
 <body <?php body_class(); ?>>

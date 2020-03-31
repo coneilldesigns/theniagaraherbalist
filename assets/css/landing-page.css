@@ -29,7 +29,7 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Futura', 'Helvetica Neue', Helvetica, Ari
 
 .main-slideshow { position: relative; }
 
-.main-slideshow .masthead { position: relative; width: 100%; background-color: #343a40; background: url("../img/bg-masthead.jpg") no-repeat center center; background-size: cover; padding-top: 1rem 0; height: 100%; text-align: left; min-height: 550px; }
+.main-slideshow .masthead { position: relative; width: 100%; background-color: #343a40; background: url("../img/bg-masthead.jpg") no-repeat center center; background-size: cover; padding-top: 1rem 0; height: 100%; text-align: left; min-height: 480px; }
 
 .main-slideshow .masthead .overlay { position: absolute; background-color: #FFF; height: 100%; width: 100%; top: 0; left: 0; opacity: 0.8; }
 
